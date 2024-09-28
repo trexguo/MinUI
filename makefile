@@ -11,7 +11,7 @@ endif
 endif
 
 ifeq (,$(PLATFORMS))
-PLATFORMS = miyoomini trimuismart rg35xx rg35xxplus tg5040 rgb30 m17 gkdpixel my282 magicmini
+PLATFORMS = miyoomini trimuismart rg35xx rg35xxplus tg5040 rgb30 gkdminiplus m17 gkdpixel my282 magicmini
 endif
 
 ###########################################################
@@ -177,6 +177,11 @@ trimuismart:
 	# ----------------------------------------------------
 
 rgb30:
+	# ----------------------------------------------------
+	make common PLATFORM=$@
+	# ----------------------------------------------------
+
+gkdminiplus:
 	# ----------------------------------------------------
 	make common PLATFORM=$@
 	# ----------------------------------------------------

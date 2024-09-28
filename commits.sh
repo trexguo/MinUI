@@ -63,6 +63,12 @@ bump() {
 	list ./workspace/rgb30/cores/src
 	bump
 
+	tell GKDMINIPLUS
+	show ./workspace/gkdminiplus/other/DinguxCommander
+	echo CORES
+	list ./workspace/gkdminiplus/cores/src
+	bump
+
 	tell TG5040
 	show ./workspace/tg5040/other/unzip60
 	echo CORES
